@@ -1,50 +1,49 @@
-html, body{
+html, body {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-.container{
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-width: 100%;
-background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.5)), url(icebreaker.jpg);
-background-position: center;
-background-size: cover;
-height:  100%;
-}
-
-
-
-
-.heading{
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('icebreaker.jpg') center/cover no-repeat;
+    height: 100%;
+    text-align: center;
     color: white;
-    font-size: 6em;
-    font-family: Arial;
-    float: left;
-    text-align:center;
-
 }
 
-.start{
-    color: white;
-    font-size: 6em;
-    font-family: Arial;
-    float: left;
-    text-align:center;
-
+.heading, .start {
+    font-size: 3em;
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
 }
 
-.logo{
-    padding-bottom: 20em;
+.logo {
+    margin-bottom: 1em;
     height: 30em;
 }
 
+.dice {
+    font-size: 5em;
+    cursor: pointer;
+    margin-top: 1em;
+    transition: transform 0.5s;
+}
+
+.dice.rolling {
+    transform: rotate(360deg);
+}
+
+#diceResult, #studentQuestion {
+    font-size: 2em;
+    margin-top: 1em;
+}
